@@ -13,9 +13,9 @@ namespace ATM2026.Controllers
 {
     public class TransactionsController : Controller
     {
-        private readonly ATM2026Context _context;
+        private readonly AppDbContext _context;
 
-        public TransactionsController(ATM2026Context context)
+        public TransactionsController(AppDbContext context)
         {
             _context = context;
         }
