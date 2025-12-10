@@ -2,7 +2,7 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 
-namespace ATM2026.Models
+namespace Artiligence.InvoiceSystem.Web.Models
 {
   public class Transactions
   {

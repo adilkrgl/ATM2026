@@ -1,8 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using ATM2026.Models;
+using Artiligence.InvoiceSystem.Web.Models;
 
-namespace ATM2026.Controllers;
+namespace Artiligence.InvoiceSystem.Web.Controllers;
 
 public class PagesController : Controller
 {

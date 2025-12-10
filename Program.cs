@@ -1,15 +1,20 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using ATM2026.Data;
-using ATM2026.Models;
+using Artiligence.InvoiceSystem.Web.Data;
+using Artiligence.InvoiceSystem.Web.Models;
+using Artiligence.InvoiceSystem.Web.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Connect to the database
-builder.Services.AddDbContext<ATM2026Context>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("AspnetCoreMvcFullContext") ?? throw new InvalidOperationException("Connection string 'AspnetCoreMvcFullContext' not found.")));
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+builder.Services.AddScoped<InvoiceNumberService>();
+builder.Services.AddScoped<InvoiceService>();
+builder.Services.AddScoped<PaymentService>();
+builder.Services.AddScoped<CustomerService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -41,6 +46,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Dashboards}/{action=Index}/{id?}"); // <-- Update in AspnetCoreMvcStarter
+    pattern: "{controller=Invoices}/{action=Index}/{id?}");
 
 app.Run();
