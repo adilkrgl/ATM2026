@@ -2,9 +2,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Linq;
-using ATM2026.Data;
+using Artiligence.InvoiceSystem.Web.Data;
 
-namespace ATM2026.Models
+namespace Artiligence.InvoiceSystem.Web.Models
 {
     public static class SeedData
     {

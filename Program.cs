@@ -1,14 +1,14 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using ATM2026.Data;
-using ATM2026.Models;
-using ATM2026.Services;
+using Artiligence.InvoiceSystem.Web.Data;
+using Artiligence.InvoiceSystem.Web.Models;
+using Artiligence.InvoiceSystem.Web.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Connect to the database
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddScoped<InvoiceNumberService>();

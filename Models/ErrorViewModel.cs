@@ -1,4 +1,4 @@
-namespace ATM2026.Models;
+namespace Artiligence.InvoiceSystem.Web.Models;
 
 public class ErrorViewModel
 {

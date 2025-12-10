@@ -1,4 +1,4 @@
-namespace ATM2026.Models.ViewModels
+namespace Artiligence.InvoiceSystem.Web.Models.ViewModels
 {
     public class CustomerDetailViewModel
     {

@@ -1,9 +1,9 @@
-using ATM2026.Models;
-using ATM2026.Models.ViewModels;
-using ATM2026.Services;
+using Artiligence.InvoiceSystem.Web.Models;
+using Artiligence.InvoiceSystem.Web.Models.ViewModels;
+using Artiligence.InvoiceSystem.Web.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ATM2026.Controllers
+namespace Artiligence.InvoiceSystem.Web.Controllers
 {
     public class PaymentsController : Controller
     {

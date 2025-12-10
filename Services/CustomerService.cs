@@ -1,8 +1,8 @@
-using ATM2026.Data;
-using ATM2026.Models;
+using Artiligence.InvoiceSystem.Web.Data;
+using Artiligence.InvoiceSystem.Web.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace ATM2026.Services
+namespace Artiligence.InvoiceSystem.Web.Services
 {
     public class CustomerService
     {

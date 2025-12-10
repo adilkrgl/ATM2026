@@ -1,6 +1,6 @@
-using ATM2026.Models;
+using Artiligence.InvoiceSystem.Web.Models;
 
-namespace ATM2026.Models.ViewModels
+namespace Artiligence.InvoiceSystem.Web.Models.ViewModels
 {
     public class InvoiceCreateViewModel
     {

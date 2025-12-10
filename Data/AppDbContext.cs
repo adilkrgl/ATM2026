@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using ATM2026.Models;
+using Artiligence.InvoiceSystem.Web.Models;
 
-namespace ATM2026.Data
+namespace Artiligence.InvoiceSystem.Web.Data
 {
     public class AppDbContext : DbContext
     {
@@ -16,7 +16,6 @@ namespace ATM2026.Data
         public DbSet<InvoiceLine> InvoiceLines => Set<InvoiceLine>();
         public DbSet<PaymentTransaction> PaymentTransactions => Set<PaymentTransaction>();
         public DbSet<InvoiceNumberSequence> InvoiceNumberSequences => Set<InvoiceNumberSequence>();
-        public DbSet<Transactions> Transactions => Set<Transactions>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

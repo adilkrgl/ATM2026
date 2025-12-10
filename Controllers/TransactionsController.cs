@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using ATM2026.Models;
-using ATM2026.Data;
+using Artiligence.InvoiceSystem.Web.Models;
+using Artiligence.InvoiceSystem.Web.Data;
 using Newtonsoft.Json;
 
-namespace ATM2026.Controllers
+namespace Artiligence.InvoiceSystem.Web.Controllers
 {
     public class TransactionsController : Controller
     {
