@@ -1,4 +1,4 @@
-using Artiligence.InvoiceSystem.Web.Models;
+using Artiligence.InvoiceSystem.Web.Models.Entities;
 using Artiligence.InvoiceSystem.Web.Models.ViewModels;
 using Artiligence.InvoiceSystem.Web.Services;
 using Microsoft.AspNetCore.Mvc;

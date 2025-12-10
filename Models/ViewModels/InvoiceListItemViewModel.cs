@@ -1,3 +1,5 @@
+using Artiligence.InvoiceSystem.Web.Models.Entities;
+
 namespace Artiligence.InvoiceSystem.Web.Models.ViewModels
 {
     public class InvoiceListItemViewModel

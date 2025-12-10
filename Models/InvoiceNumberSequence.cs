@@ -1,4 +1,4 @@
-namespace Artiligence.InvoiceSystem.Web.Models
+namespace Artiligence.InvoiceSystem.Web.Models.Entities
 {
     public class InvoiceNumberSequence
     {

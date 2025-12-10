@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Linq;
 using Artiligence.InvoiceSystem.Web.Data;
+using Artiligence.InvoiceSystem.Web.Models.Entities;
 
 namespace Artiligence.InvoiceSystem.Web.Models
 {

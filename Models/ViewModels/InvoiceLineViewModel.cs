@@ -1,4 +1,4 @@
-using Artiligence.InvoiceSystem.Web.Models;
+using Artiligence.InvoiceSystem.Web.Models.Entities;
 
 namespace Artiligence.InvoiceSystem.Web.Models.ViewModels
 {

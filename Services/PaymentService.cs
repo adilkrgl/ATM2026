@@ -1,5 +1,5 @@
 using Artiligence.InvoiceSystem.Web.Data;
-using Artiligence.InvoiceSystem.Web.Models;
+using Artiligence.InvoiceSystem.Web.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Artiligence.InvoiceSystem.Web.Services

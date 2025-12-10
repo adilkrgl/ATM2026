@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Artiligence.InvoiceSystem.Web.Models
+namespace Artiligence.InvoiceSystem.Web.Models.Entities
 {
     public class Invoice
     {
